@@ -14,7 +14,7 @@ export default function MediaCard({galleryItem}) {
         <CardMedia
           component="img"
           height="440"
-          image="{galleryItem.path}"
+          image={galleryItem.path}
           alt="location list screen shot"
           
           // src="app/public/Media/LocationList Prezo 20 ns.mov"
