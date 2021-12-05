@@ -24,43 +24,44 @@ function AppHeader() {
                         <MenuIcon />
                     </IconButton>
 
-                    <Typography 
-                        variant="h6" 
-                        color="inherit" 
+                    <Typography
+                        variant="h6"
+                        color="inherit"
                         noWrap
                         component="div"
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                        >
+                        sx={{ display: {  sm: 'block' } }}
+                    >
                         CCLLC_DEV
                     </Typography>
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                         <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        sx={{ mr: 2 }}>
+                            size="large"
+                            color="inherit"
+                            href="https://github.com/SJCMN"
+                            sx={{ mr: 2 }}>
+                            
                             <GitHubIcon />
                         </IconButton>
 
                         <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        sx={{ mr: 2 }}>
+                            size="large"
+                            color="inherit"
+                            href="https://www.linkedin.com/in/sam-clavette-2896609/"
+                            sx={{ mr: 2 }}>
                             <LinkedInIcon />
                         </IconButton>
 
                         <IconButton
-                        size="large"
-                        edge="end"
-                        color="inherit"
-                        sx={{ mr: 2 }}>
+                            size="large"
+                            color="inherit"
+                            href="https://twitter.com/scmn"
+                            sx={{ mr: 2 }}>
                             <TwitterIcon />
                         </IconButton>
-                    </Box>  
+                    </Box>
                 </Toolbar>
-               
+
             </AppBar>
         </Box>
     )
@@ -68,13 +69,13 @@ function AppHeader() {
 
 export default AppHeader
 
-   
-    
 
- 
-   
-    
-  
+
+
+
+
+
+
 
 
 
