@@ -35,16 +35,19 @@ function MediaMap() {
         <Container sx={{ py: 8 }} maxWidth="md">
             <Grid container spacing={4}>
                 {newGalleryItems.map((galleryItem) => (
-                    <MediaCard
-                        galleryItem={galleryItem}
-                        key={galleryItem.id}
-                        id={galleryItem.id}
-                        path={galleryItem.path}
-                        description={galleryItem.description}
-                    // likes={galleryItem.likes}
-                    // likeItem={likeItem}
-                    />
+                    <Grid item key={galleryItem.id} xs={12} sm={6} md={4}>
+                        <MediaCard
+                            galleryItem={galleryItem}
+                            // key={galleryItem.id}
+                            id={galleryItem.id}
+                            path={galleryItem.path}
+                            description={galleryItem.description}
+                        // likes={galleryItem.likes}
+                        // likeItem={likeItem}
+                        />
+                    </Grid>
                 ))}
+
             </Grid>
         </Container>
 

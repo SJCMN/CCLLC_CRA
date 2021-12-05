@@ -19,11 +19,10 @@ export default function MediaCard({ galleryItem }) {
             height="440"
             image={galleryItem.path}
             alt="location list screen shot"
-
           // src="app/public/Media/LocationList Prezo 20 ns.mov"
           />
         </Link>
-        <CardContent>
+        <CardContent sx={{ flexGrow: 1 }}>
           <Typography gutterBottom variant="h5" component="div">
             Location List
           </Typography>
