@@ -1,5 +1,5 @@
 import './App.css';
-import StickyFooter from './Components/StickyFooter';
+import StickyFooter from './Components/StickyFooter/StickyFooter';
 
 function App() {
   return (

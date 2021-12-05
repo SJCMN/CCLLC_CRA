@@ -4,13 +4,14 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
+import MediaCard from '../MediaCard/MediaCard';
 
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" href="https://www.ccllcdev.com//">
+        CCLLCDEV.com
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -28,15 +29,18 @@ export default function StickyFooter() {
       }}
     >
       <CssBaseline />
-      <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
+      <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="md">
         <Typography variant="h2" component="h1" gutterBottom>
-          Sticky footer
+          Hello! I'm Sam Clavette.
         </Typography>
         <Typography variant="h5" component="h2" gutterBottom>
-          {'Pin a footer to the bottom of the viewport.'}
-          {'The footer will move as the main element of the page grows.'}
+          {'These are some projects I have been working on. I am a developer who loves to use data and tech to help make peoples lives a bit easier.'}
         </Typography>
+        
         <Typography variant="body1">Sticky footer placeholder.</Typography>
+        
+        <MediaCard />
+      
       </Container>
       <Box
         component="footer"
@@ -52,7 +56,7 @@ export default function StickyFooter() {
       >
         <Container maxWidth="sm">
           <Typography variant="body1">
-            My sticky footer can be found here.
+            Contact and links.
           </Typography>
           <Copyright />
         </Container>
