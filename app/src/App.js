@@ -1,15 +1,20 @@
 import './App.css';
+import { HashRouter as Router } from 'react-router-dom';
 import StickyFooter from './Components/StickyFooter/StickyFooter';
-import axios from 'axios';
-import {useEffect, useState} from 'react'
+import AppHeader from './Components/AppHeader/AppHeader';
 
 
 function App() {
   return (
-    <div className="App">
-      <StickyFooter />
-    </div>
+    <Router>
+      <div className="App">
+        <AppHeader />
+        <StickyFooter />
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
+

@@ -4,21 +4,25 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import { Link } from 'react-router-dom';
 
-export default function MediaCard({galleryItem}) {
+export default function MediaCard({ galleryItem }) {
   return (
     <Card sx={{ maxWidth: 345 }}>
+
       <CardActionArea
-      href="https://github.com/SJCMN/LocationList-Prime"
+      // href="https://github.com/SJCMN/LocationList-Prime"
       >
-        <CardMedia
-          component="img"
-          height="440"
-          image={galleryItem.path}
-          alt="location list screen shot"
-          
+        <Link to={`/detail/${galleryItem.id}`}>
+          <CardMedia
+            component="img"
+            height="440"
+            image={galleryItem.path}
+            alt="location list screen shot"
+
           // src="app/public/Media/LocationList Prezo 20 ns.mov"
-        />
+          />
+        </Link>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Location List
@@ -27,7 +31,9 @@ export default function MediaCard({galleryItem}) {
             Location List is a mobile grocery list app. Items are sorted by distance from you and update while you shop.
           </Typography>
         </CardContent>
+
       </CardActionArea>
+
     </Card>
   );
 }

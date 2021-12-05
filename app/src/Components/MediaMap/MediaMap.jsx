@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react'
 import MediaCard from '../MediaCard/MediaCard';
-
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
 
 
 
@@ -31,9 +32,8 @@ function MediaMap() {
 
     return (
 
-        <>
-            
-            <div className="container">
+        <Container sx={{ py: 8 }} maxWidth="md">
+            <Grid container spacing={4}>
                 {newGalleryItems.map((galleryItem) => (
                     <MediaCard
                         galleryItem={galleryItem}
@@ -41,17 +41,19 @@ function MediaMap() {
                         id={galleryItem.id}
                         path={galleryItem.path}
                         description={galleryItem.description}
-                        // likes={galleryItem.likes}
-                        // likeItem={likeItem}
+                    // likes={galleryItem.likes}
+                    // likeItem={likeItem}
                     />
                 ))}
-            </div>
-        </>
+            </Grid>
+        </Container>
+
     );
 }
 
 
 export default MediaMap;
+
 
 
 
