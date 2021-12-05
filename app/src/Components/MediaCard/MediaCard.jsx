@@ -5,15 +5,18 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-export default function MediaCard() {
+export default function MediaCard({galleryItem}) {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
+      <CardActionArea
+      href="https://github.com/SJCMN/LocationList-Prime"
+      >
         <CardMedia
           component="img"
-          height="140"
-          image="./public/Media/Screen Shot 2021-12-04 at 11.29.38 PM.png"
+          height="440"
+          image="{galleryItem.path}"
           alt="location list screen shot"
+          
           // src="app/public/Media/LocationList Prezo 20 ns.mov"
         />
         <CardContent>

@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
+import MediaMap from '../MediaMap/MediaMap'
 import MediaCard from '../MediaCard/MediaCard';
 
 function Copyright() {
@@ -38,7 +39,8 @@ export default function StickyFooter() {
         </Typography>
         
         <Typography variant="body1">Sticky footer placeholder.</Typography>
-        
+
+        <MediaMap />
         <MediaCard />
       
       </Container>
