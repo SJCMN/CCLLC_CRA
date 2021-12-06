@@ -55,7 +55,7 @@ export default function StickyFooter() {
       >
         <Container maxWidth="sm">
           <Typography variant="body1">
-            Contact and links.
+            sam.clavette@gmail.com
           </Typography>
           <Copyright />
         </Container>
