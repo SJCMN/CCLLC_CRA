@@ -18,16 +18,16 @@ export default function MediaCard({ galleryItem }) {
             component="img"
             height="440"
             image={galleryItem.path}
-            alt="location list screen shot"
+            alt={galleryItem.title}
           // src="app/public/Media/LocationList Prezo 20 ns.mov"
           />
         </Link>
         <CardContent sx={{ flexGrow: 1 }}>
           <Typography gutterBottom variant="h5" component="div">
-            Location List
+          {galleryItem.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Location List is a mobile grocery list app. Items are sorted by distance from you and update while you shop.
+          {galleryItem.description}
           </Typography>
         </CardContent>
 
