@@ -5,8 +5,18 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function MediaCard({ galleryItem }) {
+
+  const [gif, setGif] = useState(false)
+
+  const showGif= () => {
+
+      setGif(!gif)
+  }
+
+
   return (
     <Card sx={{ maxWidth: 345 }}>
 
@@ -17,10 +27,15 @@ export default function MediaCard({ galleryItem }) {
           <CardMedia
             component="img"
             height="440"
-            image={galleryItem.path}
+
+            image={
+              gif === false ?
+              galleryItem.path : galleryItem.gif}
             alt={galleryItem.title}
+            onClick={showGif}
           // src="app/public/Media/LocationList Prezo 20 ns.mov"
           />
+     
         </Link>
         <CardContent sx={{ flexGrow: 1 }}>
           <Typography gutterBottom variant="h5" component="div">

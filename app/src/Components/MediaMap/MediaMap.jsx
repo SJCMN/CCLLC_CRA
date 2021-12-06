@@ -9,7 +9,7 @@ import Grid from '@mui/material/Grid';
 function MediaMap() {
 
     const galleryItems = [
-        { id: 1, path: 'https://raw.githubusercontent.com/SJCMN/CCLLC_CRA/main/app/public/Media/Screen%20Shot%202021-12-04%20at%2011.29.38%20PM.png', description: 'Location List is a mobile grocery list app. Items are sorted by distance from you and update while you shop.', title: 'LocationList' },
+        { id: 1, path: 'https://raw.githubusercontent.com/SJCMN/CCLLC_CRA/main/app/public/Media/Screen%20Shot%202021-12-04%20at%2011.29.38%20PM.png', gif: 'https://media.giphy.com/media/iYEHYWjKCVkeUSfXiB/giphy.gif', description: 'Location List is a mobile grocery list app. Items are sorted by distance from you and update while you shop.', title: 'LocationList' },
         { id: 2, path: 'https://raw.githubusercontent.com/SJCMN/CCLLC_CRA/main/app/public/Media/Screen%20Shot%202021-12-05%20at%2010.28.47%20PM.png', description: 'Movie gallery with API to OMDB open movie database keyword search, returns title, movie poster image url, and plot description', title: 'Movie Gallery' },
         { id: 3, path: 'https://raw.githubusercontent.com/SJCMN/CCLLC_CRA/main/app/public/Media/Screen%20Shot%202021-12-05%20at%2010.40.29%20PM.png', description: 'Pet Hotel React front end with .Net and C# back end with postgreSQL server for adding and tracking pets and owners.', title: 'Pet Hotel App' },
         { id: 4, path: 'https://raw.githubusercontent.com/SJCMN/CCLLC_CRA/main/app/public/Media/Screen%20Shot%202021-12-05%20at%2010.53.52%20PM.png', description: 'React authenticated access routes full-stack CRUD app for adding items with url image and description to database.', title: 'React Auth App' },
@@ -18,7 +18,7 @@ function MediaMap() {
     
     ];
 
-
+    
     // const [newGalleryItems, setGalleryItems] = useState([]);
 
 

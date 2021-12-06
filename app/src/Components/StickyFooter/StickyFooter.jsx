@@ -37,7 +37,7 @@ export default function StickyFooter() {
         <Typography variant="h5" component="h2" gutterBottom>
           {'These are some projects I have been working on. I am a developer who loves to use data and tech to help make peoples lives a bit easier.'}
         </Typography>
-
+        
         <MediaMap />
 
       </Container>
@@ -63,3 +63,4 @@ export default function StickyFooter() {
     </Box>
   );
 }
+
