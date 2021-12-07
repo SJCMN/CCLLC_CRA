@@ -24,3 +24,5 @@ yarn-error.log*
 
 # ssl
 .txt
+.ca-bundle
+.crt
