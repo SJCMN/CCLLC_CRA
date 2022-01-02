@@ -31,10 +31,10 @@ function AppHeader() {
                         component="div"
                         sx={{ display: { sm: 'block' } }}
                     >
-                        <Link 
-                        color="inherit" 
-                        href="https://www.ccllcdev.com/"
-                        underline="none"
+                        <Link
+                            color="inherit"
+                            href="https://www.ccllcdev.com/"
+                            underline="none"
                         >
                             CCLLC_DEV
                         </Link>
@@ -67,7 +67,6 @@ function AppHeader() {
                         </IconButton>
                     </Box>
                 </Toolbar>
-
             </AppBar>
         </Box>
     )
