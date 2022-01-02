@@ -11,8 +11,12 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
       {'Copyright © '}
-      <Link color="inherit" href="https://www.ccllcdev.com/">
-        CCLLCDEV
+      <Link
+        color="inherit"
+        href="https://www.ccllcdev.com/"
+        underline="none"
+      >
+        CCLLC_DEV
       </Link>{' '}
       {new Date().getFullYear()}
     </Typography>

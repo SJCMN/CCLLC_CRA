@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
-
+import Link from '@mui/material/Link';
 
 function AppHeader() {
     return (
@@ -29,9 +29,15 @@ function AppHeader() {
                         color="inherit"
                         noWrap
                         component="div"
-                        sx={{ display: {  sm: 'block' } }}
+                        sx={{ display: { sm: 'block' } }}
                     >
-                        CCLLC_DEV
+                        <Link 
+                        color="inherit" 
+                        href="https://www.ccllcdev.com/"
+                        underline="none"
+                        >
+                            CCLLC_DEV
+                        </Link>
                     </Typography>
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
@@ -40,7 +46,7 @@ function AppHeader() {
                             color="inherit"
                             href="https://github.com/SJCMN"
                             sx={{ mr: 2 }}>
-                            
+
                             <GitHubIcon />
                         </IconButton>
 
