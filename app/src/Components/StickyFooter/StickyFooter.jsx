@@ -11,8 +11,12 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
       {'Copyright © '}
-      <Link color="inherit" href="https://www.ccllcdev.com/">
-        CCLLCDEV
+      <Link
+        color="inherit"
+        href="https://www.ccllcdev.com/"
+        underline="none"
+      >
+        CCLLC_DEV
       </Link>{' '}
       {new Date().getFullYear()}
     </Typography>
@@ -33,10 +37,21 @@ export default function StickyFooter() {
         <Typography variant="h2" component="h1" gutterBottom>
           Hello! I'm Sam Clavette.
         </Typography>
-        <Typography variant="h5" component="h2" gutterBottom>
-          {'These are some projects I have been working on. I am a developer who loves to use data and tech to help make peoples lives a bit easier.'}
+        <Typography variant="h5" component="h2" gutterBottom
+        margin="auto"
+        align="center"
+        sx={{width: '94%'}}
+        >
+          {`These are some projects I have been working on while attending the `}
+          <Link 
+          underline="hover"
+          color="inherit"
+          href="https://www.primeacademy.io/courses/engineering"
+          >
+            Prime Academy
+          </Link>
+          {` full-stack engineering emersion program. I am a developer who loves to use data and tech to help make peoples lives a bit easier.`}
         </Typography>
-
         <MediaMap />
 
       </Container>
