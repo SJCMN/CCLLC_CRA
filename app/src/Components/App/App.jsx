@@ -1,7 +1,7 @@
 import './App.css';
 import { HashRouter as Router } from 'react-router-dom';
-import StickyFooter from './Components/StickyFooter/StickyFooter';
-import AppHeader from './Components/AppHeader/AppHeader';
+import StickyFooter from '../StickyFooter/StickyFooter';
+import AppHeader from '../AppHeader/AppHeader';
 import CssBaseline from '@mui/material/CssBaseline';
 
 
