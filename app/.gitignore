@@ -11,6 +11,9 @@
 # production
 /build
 
+# reference
+/ccllcdev_com
+
 # misc
 .DS_Store
 .env.local
@@ -27,3 +30,4 @@ yarn-error.log*
 .txt
 .ca-bundle
 .crt
+.
