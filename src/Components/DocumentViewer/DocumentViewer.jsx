@@ -25,24 +25,37 @@ function DocumentViewer() {
   };
 
   return (
-    <Paper elevation={2}>
-      <Document file="./resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-        <Page pageNumber={pageNumber} />
-      </Document>
-      <p>
-        {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
-      </p>
-      <button type="button" disabled={pageNumber <= 1} onClick={previousPage}>
-        ‹
-      </button>
-      <button
-        type="button"
-        disabled={pageNumber >= numPages}
-        onClick={nextPage}
-      >
-        ›
-      </button>
-    </Paper>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: { xs: "column", md: "row" },
+        alignItems: "center",
+        bgcolor: "background.paper",
+        overflow: "hidden",
+        borderRadius: "12px",
+        boxShadow: 1,
+        fontWeight: "bold",
+      }}
+    >
+      
+        <Document file="./resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+          <Page pageNumber={pageNumber} />
+        
+        <p>
+          {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
+        </p>
+        <button type="button" disabled={pageNumber <= 1} onClick={previousPage}>
+          ‹
+        </button>
+        <button
+          type="button"
+          disabled={pageNumber >= numPages}
+          onClick={nextPage}
+        >
+          ›
+        </button>
+        </Document>
+    </Box>
   );
 }
 
