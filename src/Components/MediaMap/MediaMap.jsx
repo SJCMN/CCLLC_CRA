@@ -3,6 +3,7 @@
 import MediaCard from '../MediaCard/MediaCard';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+import { document } from 'react-pdf'
 
 
 
