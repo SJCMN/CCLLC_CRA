@@ -29,16 +29,23 @@ export default function StickyFooter() {
       }}
     >
       <CssBaseline />
-      <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="md">
-        <Typography variant="h2" component="h1" gutterBottom>
-          Hello! I'm Sam Clavette.
+      <Container component="main" sx={{ mt: 8, mb: 6 }} maxWidth="md">
+        <Typography
+          variant="h2"
+          component="h1"
+          gutterBottom
+          sx={{
+            fontWeight: "bold",
+            marginLeft: "1.5rem",
+          }}
+        >
+        Hello! I'm Sam Clavette.
         </Typography>
         <Typography
           variant="h5"
           component="h2"
           gutterBottom
           margin="auto"
-          align="center"
           sx={{ width: "94%" }}
         >
           {`These are some projects I have been working on while attending the `}

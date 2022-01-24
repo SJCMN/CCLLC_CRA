@@ -27,14 +27,16 @@ function DocumentViewer() {
   return (
     <Box
       sx={{
-        display: "flex",
-        flexDirection: { xs: "column", md: "row" },
+        display: "inline-block",
+        flexDirection: { xs: "column" },
         alignItems: "center",
         bgcolor: "background.paper",
         overflow: "hidden",
         borderRadius: "12px",
         boxShadow: 1,
         fontWeight: "bold",
+        maxWidth: "70%"
+        
       }}
     >
       

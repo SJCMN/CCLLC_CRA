@@ -17,7 +17,7 @@ export default function MediaCard({ galleryItem }) {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="440"
+          height="450"
           image={gif === false ? galleryItem.path : galleryItem.gif}
           alt={galleryItem.title}
           onMouseEnter={showGif}
