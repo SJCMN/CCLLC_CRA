@@ -3,60 +3,59 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import { Link , useNavigate } from 'react-router-dom';
+import { CardActionArea, Link } from '@mui/material';
 import { useState } from 'react';
 
 export default function MediaCard({ galleryItem }) {
-
-  const navigate = useNavigate();
-
+  
   const [gif, setGif] = useState(false)
-
   const showGif = () => {
-
     setGif(!gif)
   }
-
-  // const handleClick = () => {
-  //   navigate(galleryItem.link)
-  // }
 
 
   return (
     <Card sx={{ maxWidth: 345 }}>
 
-      <CardActionArea
-      href="https://locationlist.herokuapp.com/#/home" 
-      >
-        {/* <Link to={galleryItem.link}> */}
+      <CardActionArea>
           <CardMedia
             component="img"
             height="440"
-
             image={
               gif === false ?
                 galleryItem.path : galleryItem.gif}
             alt={galleryItem.title}
             onMouseEnter={showGif}
             onMouseLeave={showGif}
-            // onClick={handleClick}
             onTouchStart={showGif}
             onTouchEnd={showGif}
-          
           />
 
-        {/* </Link> */}
+        </CardActionArea>
+
         <CardContent sx={{ flexGrow: 1 }}>
-          <Typography gutterBottom variant="h5" component="div">
-            {galleryItem.title}
+          
+          <Typography 
+          gutterBottom 
+          variant="h5" 
+          component="div"
+          >  
+          <Link
+          href={galleryItem.link}
+          underline="none"
+          color="inherit"
+          >
+          {galleryItem.title}
+          </Link>
           </Typography>
+          
           <Typography variant="body2" color="text.secondary">
             {galleryItem.description}
           </Typography>
+          
         </CardContent>
-
-      </CardActionArea>
+        
+      
 
     </Card>
   );

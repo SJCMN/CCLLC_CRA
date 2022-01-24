@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import MediaMap from '../MediaMap/MediaMap'
+import DocumentViewer from '../DocumentViewer/DocumentViewer'
 
 
 function Copyright() {
@@ -53,7 +54,7 @@ export default function StickyFooter() {
           {` full-stack engineering emersion program. I am a developer who loves to use data and tech to help make peoples lives a bit easier.`}
         </Typography>
         <MediaMap />
-
+        <DocumentViewer/>
       </Container>
       <Box
         component="footer"
