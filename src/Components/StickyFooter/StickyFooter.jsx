@@ -39,7 +39,7 @@ export default function StickyFooter() {
             marginLeft: "1.5rem",
           }}
         >
-        Hello! I'm Sam Clavette.
+          Hello! I'm Sam Clavette.
         </Typography>
         <Typography
           variant="h5"

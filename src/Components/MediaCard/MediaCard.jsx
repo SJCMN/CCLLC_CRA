@@ -13,11 +13,10 @@ export default function MediaCard({ galleryItem }) {
   };
 
   return (
-    <Card >
+    <Card>
       <CardActionArea>
         <CardMedia
           component="img"
-          
           image={gif === false ? galleryItem.path : galleryItem.gif}
           alt={galleryItem.title}
           onMouseEnter={showGif}
