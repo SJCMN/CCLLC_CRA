@@ -48,7 +48,7 @@ const galleryItems = [
     {
       id: 6,
       path: "https://raw.githubusercontent.com/SJCMN/CCLLC_CRA/main/public/Media/Screen%20Shot%202021-12-05%20at%2010.59.16%20PM.png",
-      gif: "",
+      gif: "https://media.giphy.com/media/5IoAq3236kaQ8nKcPI/giphy.gif",
       link: "",
       description:
         "Lystr is a rental platform for vehicle owners and vacation rental travelers",

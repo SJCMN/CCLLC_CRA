@@ -28,8 +28,14 @@ function MediaMap() {
   // }, []);
 
   return (
-    <Container sx={{ py: 8 }} maxWidth="md">
-      <Masonry columns = {3} spacing={3}>
+    <Container sx={{ py: 8 }} >
+      <Masonry
+       columns = {{sm:1, md:2}} 
+       spacing={3}
+       defaultHeight={550}
+       defaultColumns={4}
+       defaultSpacing={1}
+       >
         {galleryItems.map((galleryItem) => (
           
             <MediaCard

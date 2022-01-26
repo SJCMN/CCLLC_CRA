@@ -13,7 +13,7 @@ export default function MediaCard({ galleryItem }) {
   };
 
   return (
-    <Card sx={{ maxWidth: 450 }}>
+    <Card >
       <CardActionArea>
         <CardMedia
           component="img"
