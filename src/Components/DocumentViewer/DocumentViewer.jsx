@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import { Box, Button, ButtonGroup, Link } from "@mui/material";
 
-
 function DocumentViewer() {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
@@ -25,12 +24,6 @@ function DocumentViewer() {
     changePage(1);
   };
 
-  const resumeDownload = () => {
-
-  }
-
-  
-
   return (
     <Box
       sx={{
@@ -42,19 +35,15 @@ function DocumentViewer() {
         maxWidth: "100%",
       }}
     >
-      <Document file= './resume.pdf' onLoadSuccess={onDocumentLoadSuccess}>
-        <Page 
-        pageNumber={pageNumber} 
-        scale={1.25}
-        />
+      <Document file="./resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+        <Page pageNumber={pageNumber} scale={1.25} />
         <Box
           sx={{
             pb: 2,
-            textAlign: "center"
+            textAlign: "center",
           }}
         >
           <ButtonGroup>
-            
             <Button
               type="button"
               disabled={pageNumber <= 1}
@@ -62,16 +51,16 @@ function DocumentViewer() {
             >
               ‹
             </Button>
-              <Button>
-                <Link 
+            <Button>
+              <Link
                 underline="none"
                 color="inherit"
-                href="./resume.pdf" 
+                href="./resume.pdf"
                 download="Sam Clavette Developer Resume.pdf"
-                >
-                  Download
-                </Link>
-              </Button>
+              >
+                Download
+              </Link>
+            </Button>
             <Button
               type="button"
               disabled={pageNumber >= numPages}
@@ -79,7 +68,6 @@ function DocumentViewer() {
             >
               ›
             </Button>
-            
           </ButtonGroup>
         </Box>
       </Document>
