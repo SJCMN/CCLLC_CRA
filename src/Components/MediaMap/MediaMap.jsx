@@ -4,6 +4,8 @@ import MediaCard from "../MediaCard/MediaCard";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import galleryItems from './galleryItems';
+import { Box, Paper, } from '@mui/material';
+import Masonry from '@mui/lab/Masonry';
 
 function MediaMap() {
     
@@ -27,18 +29,18 @@ function MediaMap() {
 
   return (
     <Container sx={{ py: 8 }} maxWidth="md">
-      <Grid container spacing={4}>
+      <Masonry columns = {3} spacing={3}>
         {galleryItems.map((galleryItem) => (
-          <Grid item key={galleryItem.id} xs={12} sm={6} md={4}>
+          
             <MediaCard
               galleryItem={galleryItem}
               id={galleryItem.id}
               title={galleryItem.title}
               description={galleryItem.description}
             />
-          </Grid>
+          
         ))}
-      </Grid>
+      </Masonry>
     </Container>
   );
 }
