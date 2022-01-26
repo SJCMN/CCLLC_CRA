@@ -12,7 +12,7 @@ import Link from "@mui/material/Link";
 function AppHeader() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="relative">
+      <AppBar color="info" position="relative">
         <Toolbar>
           <IconButton
             size="large"

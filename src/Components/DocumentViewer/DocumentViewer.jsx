@@ -1,11 +1,18 @@
 import React from "react";
 import { useState } from "react";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
-import { Box, Button, ButtonGroup, Link } from "@mui/material";
+import { Box, Button, ButtonGroup, Link, IconButton } from "@mui/material";
 
-function DocumentViewer() {
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+
+
+
+function DocumentViewer({theme}) {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
+
+
 
   const onDocumentLoadSuccess = ({ numPages }) => {
     setNumPages(numPages);
@@ -43,31 +50,35 @@ function DocumentViewer() {
             textAlign: "center",
           }}
         >
-          <ButtonGroup>
-            <Button
-              type="button"
+          <ButtonGroup  variant="info" disableRipple={true}>
+            <IconButton
+           
+              size="small"
               disabled={pageNumber <= 1}
               onClick={previousPage}
             >
-              ‹
-            </Button>
-            <Button>
+              <ArrowBackIosIcon />
+            </IconButton>
+            <Button color="error">
               <Link
+                size="small"
                 underline="none"
-                color="inherit"
+                color="black"
+                fontWeight={"bold"}
                 href="./resume.pdf"
                 download="Sam Clavette Developer Resume.pdf"
               >
                 Download
               </Link>
             </Button>
-            <Button
-              type="button"
+            <IconButton
+            
+              size="small"
               disabled={pageNumber >= numPages}
               onClick={nextPage}
             >
-              ›
-            </Button>
+              <ArrowForwardIosIcon />
+            </IconButton>
           </ButtonGroup>
         </Box>
       </Document>
