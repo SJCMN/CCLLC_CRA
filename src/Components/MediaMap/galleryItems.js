@@ -6,7 +6,7 @@ const galleryItems = [
       link: "https://locationlist.herokuapp.com/ ",
       file: "",
       description:
-        "Location List is amobile  grocery list app. Items are sorted by distance from you and update while you shop.",
+        "Location List is a mobile-first  grocery list app. Items are sorted by distance from you and update while you shop.",
       title: "LocationList",
     },
     {
