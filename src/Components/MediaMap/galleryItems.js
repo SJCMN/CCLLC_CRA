@@ -38,7 +38,7 @@ const galleryItems = [
     },
     {
       id: 5,
-      path: "https://raw.githubusercontent.com/SJCMN/CCLLC_CRA/main/public/Media/Screen%20Shot%202021-12-05%20at%2011.05.35%20PM.png",
+      path: "https://raw.githubusercontent.com/SJCMN/CCLLC_CRA/main/public/Media/Giphy%20Search%20screen%20capture.png",
       gif: "",
       link: "",
       description:
