@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
-import { Box, Paper } from "@mui/material";
+import { Box } from "@mui/material";
 
 function DocumentViewer() {
   const [numPages, setNumPages] = useState(null);
@@ -25,9 +25,10 @@ function DocumentViewer() {
   };
 
   return (
+    
     <Box
       sx={{
-        display: "inline-block",
+        display: {md: "inline-block", xs: 'none'},
         flexDirection: { xs: "column" },
         alignItems: "center",
         bgcolor: "background.paper",
