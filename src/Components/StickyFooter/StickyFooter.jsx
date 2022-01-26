@@ -56,7 +56,7 @@ export default function StickyFooter() {
           >
             Prime Academy
           </Link>
-          {` Full-Stack Software Engineering Immersion program. I am a developer who loves to use data and tech to help make peoples lives a bit easier.`}
+          {` Full-Stack Software Engineering Immersion program. I am a developer who uses data and tech to help make peoples lives easier.`}
         </Typography>
         <MediaMap />
         <DocumentViewer />
