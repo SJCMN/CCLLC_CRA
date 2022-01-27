@@ -48,7 +48,8 @@ export default function StickyFooter() {
           margin="auto"
           sx={{ width: "94%" }}
         >
-          {`These are some projects I have been working on while attending the `}
+          {`I am a Full-Stack Software developer who uses data and tech to help make peoples lives easier. `}
+          {`These are some projects I built while attending the `}
           <Link
             underline="hover"
             color="inherit"
@@ -56,7 +57,7 @@ export default function StickyFooter() {
           >
             Prime Academy
           </Link>
-          {` Full-Stack Software Engineering Immersion program. I am a developer who uses data and tech to help make peoples lives easier.`}
+          {` Full-Stack Software Engineering Immersion program.`}
         </Typography>
         <MediaMap />
         <DocumentViewer />
