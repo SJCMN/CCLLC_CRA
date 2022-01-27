@@ -48,7 +48,7 @@ export default function StickyFooter() {
           margin="auto"
           sx={{ width: "94%" }}
         >
-          {`I am a Full-Stack Software developer who uses data and tech to help make peoples lives easier. `}
+          {`I am a Full-Stack Software Developer who uses data and tech to help make peoples lives easier. `}
           {`These are some projects I built while attending the `}
           <Link
             underline="hover"
