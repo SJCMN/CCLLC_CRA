@@ -48,9 +48,10 @@ export default function StickyFooter() {
           margin="auto"
           sx={{ width: "94%" }}
         >
-          {`I am a Full-Stack Software Developer who uses data and technology to help make peoples' lives easier. `}
-          {`My Industrial Design background designing and engineering retail spaces offers a unique perspective. `}
-          {`These are some projects I built while attending the `}
+          {`Full-Stack Software Developer focusing on front-end development. `}
+          {`Angular Developer at Delta Airlines as a Concord Contractor. `}
+          {`Attended Prime Academy Full-Stack Web Engineering immersion program`}
+
           <Link
             underline="hover"
             color="inherit"
